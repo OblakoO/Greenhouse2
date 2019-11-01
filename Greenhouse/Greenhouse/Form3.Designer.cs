@@ -53,11 +53,12 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(441, 12);
+            this.textBox1.Location = new System.Drawing.Point(318, 11);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
+            this.textBox1.Size = new System.Drawing.Size(157, 17);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Выберите культуру";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -75,9 +76,10 @@
             "Огурцы",
             "Свекла",
             "Капуста"});
-            this.listsPlan.Location = new System.Drawing.Point(424, 50);
+            this.listsPlan.Location = new System.Drawing.Point(318, 32);
+            this.listsPlan.Margin = new System.Windows.Forms.Padding(2);
             this.listsPlan.Name = "listsPlan";
-            this.listsPlan.Size = new System.Drawing.Size(199, 24);
+            this.listsPlan.Size = new System.Drawing.Size(157, 21);
             this.listsPlan.TabIndex = 2;
             // 
             // textBox2
@@ -85,9 +87,10 @@
             this.textBox2.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(826, 119);
+            this.textBox2.Location = new System.Drawing.Point(620, 97);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 20);
+            this.textBox2.Size = new System.Drawing.Size(145, 16);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Начальная влажность";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -97,35 +100,40 @@
             this.textBox3.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(12, 119);
+            this.textBox3.Location = new System.Drawing.Point(9, 97);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 20);
+            this.textBox3.Size = new System.Drawing.Size(162, 16);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Начальная температура";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(424, 119);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(318, 97);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(199, 67);
+            this.button1.Size = new System.Drawing.Size(157, 54);
             this.button1.TabIndex = 5;
             this.button1.Text = "Перейти к теплице";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(826, 164);
+            this.maskedTextBox1.Location = new System.Drawing.Point(620, 133);
+            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(193, 22);
+            this.maskedTextBox1.Size = new System.Drawing.Size(146, 20);
             this.maskedTextBox1.TabIndex = 6;
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(21, 164);
+            this.maskedTextBox2.Location = new System.Drawing.Point(16, 133);
+            this.maskedTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(193, 22);
+            this.maskedTextBox2.Size = new System.Drawing.Size(146, 20);
             this.maskedTextBox2.TabIndex = 7;
             // 
             // textBox4
@@ -133,9 +141,10 @@
             this.textBox4.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(723, 166);
+            this.textBox4.Location = new System.Drawing.Point(542, 135);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(97, 20);
+            this.textBox4.Size = new System.Drawing.Size(73, 16);
             this.textBox4.TabIndex = 8;
             this.textBox4.Text = "Процентов";
             // 
@@ -144,9 +153,10 @@
             this.textBox6.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(54, 224);
+            this.textBox6.Location = new System.Drawing.Point(40, 182);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(130, 20);
+            this.textBox6.Size = new System.Drawing.Size(98, 16);
             this.textBox6.TabIndex = 10;
             this.textBox6.Text = "Длительность";
             // 
@@ -155,43 +165,49 @@
             this.textBox7.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(862, 224);
+            this.textBox7.Location = new System.Drawing.Point(646, 182);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(130, 20);
+            this.textBox7.Size = new System.Drawing.Size(98, 16);
             this.textBox7.TabIndex = 11;
             this.textBox7.Text = "Длительность";
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(21, 295);
+            this.maskedTextBox3.Location = new System.Drawing.Point(16, 240);
+            this.maskedTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(193, 22);
+            this.maskedTextBox3.Size = new System.Drawing.Size(146, 20);
             this.maskedTextBox3.TabIndex = 12;
             // 
             // maskedTextBox4
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(826, 295);
+            this.maskedTextBox4.Location = new System.Drawing.Point(620, 240);
+            this.maskedTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(193, 22);
+            this.maskedTextBox4.Size = new System.Drawing.Size(146, 20);
             this.maskedTextBox4.TabIndex = 13;
             this.maskedTextBox4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox4_MaskInputRejected);
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(424, 408);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(318, 332);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(199, 67);
+            this.button2.Size = new System.Drawing.Size(157, 54);
             this.button2.TabIndex = 16;
             this.button2.Text = "Начать выращивание";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(21, 408);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(16, 332);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(199, 67);
+            this.button3.Size = new System.Drawing.Size(157, 54);
             this.button3.TabIndex = 17;
             this.button3.Text = "Сохранить план";
             this.button3.UseVisualStyleBackColor = true;
@@ -199,10 +215,11 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(820, 408);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(609, 332);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(199, 67);
+            this.button4.Size = new System.Drawing.Size(157, 54);
             this.button4.TabIndex = 18;
             this.button4.Text = "Вернуться на главную";
             this.button4.UseVisualStyleBackColor = true;
@@ -217,9 +234,10 @@
             "°C",
             "°F",
             "K"});
-            this.comboBox1.Location = new System.Drawing.Point(220, 164);
+            this.comboBox1.Location = new System.Drawing.Point(165, 133);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(86, 24);
+            this.comboBox1.Size = new System.Drawing.Size(66, 21);
             this.comboBox1.TabIndex = 19;
             // 
             // comboBox2
@@ -232,9 +250,10 @@
             "Часов",
             "Дней ",
             "Недель"});
-            this.comboBox2.Location = new System.Drawing.Point(220, 295);
+            this.comboBox2.Location = new System.Drawing.Point(165, 240);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(86, 24);
+            this.comboBox2.Size = new System.Drawing.Size(66, 21);
             this.comboBox2.TabIndex = 20;
             // 
             // comboBox3
@@ -247,17 +266,18 @@
             "Часов",
             "Дней ",
             "Недель"});
-            this.comboBox3.Location = new System.Drawing.Point(734, 295);
+            this.comboBox3.Location = new System.Drawing.Point(550, 240);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(86, 24);
+            this.comboBox3.Size = new System.Drawing.Size(66, 21);
             this.comboBox3.TabIndex = 21;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.ClientSize = new System.Drawing.Size(1045, 504);
+            this.ClientSize = new System.Drawing.Size(784, 410);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -277,7 +297,6 @@
             this.Controls.Add(this.listsPlan);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form3";
             this.Text = "Создать новый план";
             this.ResumeLayout(false);
