@@ -40,7 +40,8 @@ namespace Greenhouse
 
         private void button2_Click(object sender, EventArgs e)  //кнопка стартовать цикл
         {
-
+            Form3 newForm = new Form3();
+            newForm.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)   //кнопка отобразить теплицу

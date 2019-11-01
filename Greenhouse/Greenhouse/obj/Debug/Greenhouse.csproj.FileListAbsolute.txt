@@ -17,3 +17,14 @@ C:\Users\лэлжлжл\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csproj.CoreCo
 C:\Users\лэлжлжл\Greenhouse\Greenhouse\obj\Debug\Greenhouse.exe
 C:\Users\лэлжлжл\Greenhouse\Greenhouse\obj\Debug\Greenhouse.pdb
 C:\Users\лэлжлжл\Greenhouse\Greenhouse\obj\Debug\Greenhouse.Form2.resources
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\bin\Debug\Greenhouse.exe
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\bin\Debug\Greenhouse.pdb
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csprojAssemblyReference.cache
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.window.resources
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.Form2.resources
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.Form3.resources
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.Properties.Resources.resources
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csproj.GenerateResource.cache
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.csproj.CoreCompileInputs.cache
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.exe
+C:\Users\лэлжлжл\source\repos\OblakoO\Greenhouse2\Greenhouse\Greenhouse\obj\Debug\Greenhouse.pdb
