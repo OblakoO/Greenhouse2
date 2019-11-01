@@ -16,12 +16,32 @@ namespace Greenhouse
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)  //текст выберите устройство
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //кнопка добавить устройство
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)  //выпадающий список
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)//панель теплицы
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e) //текст отображение теплицы
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)  //кнопка удалить устройство
         {
 
         }

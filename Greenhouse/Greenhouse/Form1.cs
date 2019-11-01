@@ -22,13 +22,13 @@ namespace Greenhouse
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)  //кнопка создать новый план
         {
            
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)   //выпадающий список
         {
 
         }
@@ -38,12 +38,12 @@ namespace Greenhouse
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)  //кнопка стартовать цикл
         {
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)   //кнопка отобразить теплицу
         {
             Form2 newForm = new Form2();
             newForm.Show();
@@ -56,6 +56,26 @@ namespace Greenhouse
     
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)  //текущее время
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)  //пуск
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e) //пауза
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e) // х2
         {
 
         }

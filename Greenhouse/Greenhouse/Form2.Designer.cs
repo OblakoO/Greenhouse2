@@ -45,6 +45,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(193, 21);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -66,6 +67,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Удалить устройство";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -91,6 +93,7 @@
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "Отображение теплицы:";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // panel1
             // 
@@ -99,6 +102,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(577, 403);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Form2
             // 
