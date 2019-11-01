@@ -16,6 +16,8 @@ namespace Greenhouse
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new window());
+
+            
         }
     }
 }

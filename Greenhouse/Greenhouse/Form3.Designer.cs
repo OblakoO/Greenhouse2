@@ -39,7 +39,7 @@
             this.ClientSize = new System.Drawing.Size(375, 339);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Создать новый план";
             this.ResumeLayout(false);
 
         }

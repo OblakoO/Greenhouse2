@@ -118,7 +118,7 @@
             this.Controls.Add(this.comboBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Отображение теплицы";
             this.ResumeLayout(false);
             this.PerformLayout();
 

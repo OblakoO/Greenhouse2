@@ -57,6 +57,9 @@
             this.listsPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.listsPlan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.listsPlan.FormattingEnabled = true;
+            this.listsPlan.Items.AddRange(new object[] {
+            "Помидоры",
+            "Кукуруза"});
             this.listsPlan.Location = new System.Drawing.Point(214, 140);
             this.listsPlan.Name = "listsPlan";
             this.listsPlan.Size = new System.Drawing.Size(199, 21);
