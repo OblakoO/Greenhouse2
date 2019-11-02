@@ -53,7 +53,6 @@ namespace Greenhouse
         private void button1_Click_1(object sender, EventArgs e)   //кнопка отобразить теплицу
         {
             Form2 newForm = new Form2();
-            //newForm.Show();
             newForm.ShowDialog();
         }
 

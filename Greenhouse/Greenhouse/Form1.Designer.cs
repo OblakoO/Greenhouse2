@@ -39,10 +39,10 @@
             // 
             this.createNewPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.createNewPlan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.createNewPlan.Location = new System.Drawing.Point(142, 44);
+            this.createNewPlan.Location = new System.Drawing.Point(84, 40);
             this.createNewPlan.Margin = new System.Windows.Forms.Padding(2);
             this.createNewPlan.Name = "createNewPlan";
-            this.createNewPlan.Size = new System.Drawing.Size(191, 48);
+            this.createNewPlan.Size = new System.Drawing.Size(182, 37);
             this.createNewPlan.TabIndex = 0;
             this.createNewPlan.Text = "Создать новый план";
             this.createNewPlan.UseVisualStyleBackColor = true;
@@ -54,10 +54,10 @@
             this.listsPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.listsPlan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.listsPlan.FormattingEnabled = true;
-            this.listsPlan.Location = new System.Drawing.Point(142, 106);
+            this.listsPlan.Location = new System.Drawing.Point(84, 81);
             this.listsPlan.Margin = new System.Windows.Forms.Padding(2);
             this.listsPlan.Name = "listsPlan";
-            this.listsPlan.Size = new System.Drawing.Size(191, 25);
+            this.listsPlan.Size = new System.Drawing.Size(182, 21);
             this.listsPlan.TabIndex = 1;
             this.listsPlan.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -65,10 +65,10 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(35, 200);
+            this.button1.Location = new System.Drawing.Point(26, 153);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 155);
+            this.button1.Size = new System.Drawing.Size(136, 119);
             this.button1.TabIndex = 2;
             this.button1.Text = "Отобразить теплицу";
             this.button1.UseVisualStyleBackColor = true;
@@ -78,10 +78,10 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(263, 200);
+            this.button2.Location = new System.Drawing.Point(197, 153);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 155);
+            this.button2.Size = new System.Drawing.Size(136, 119);
             this.button2.TabIndex = 3;
             this.button2.Text = "   Стартовать     цикл";
             this.button2.UseVisualStyleBackColor = true;
@@ -89,10 +89,10 @@
             // 
             // window
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.ClientSize = new System.Drawing.Size(475, 466);
+            this.ClientSize = new System.Drawing.Size(356, 356);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listsPlan);

@@ -23,7 +23,10 @@ namespace Greenhouse
 
         private void button1_Click(object sender, EventArgs e) //кнопка добавить устройство
         {
-
+            if (comboBox1.SelectedIndex == -1 || comboBox1.SelectedIndex == 8)
+            {
+                MessageBox.Show("Ошибка: устройство не выбрано.");
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)  //выпадающий список
