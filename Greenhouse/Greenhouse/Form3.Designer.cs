@@ -226,7 +226,7 @@
             "°C",
             "°F",
             "K"});
-            this.comboBox1.Location = new System.Drawing.Point(276, 240);
+            this.comboBox1.Location = new System.Drawing.Point(276, 130);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(66, 21);
@@ -243,7 +243,7 @@
             "Часов",
             "Дней ",
             "Недель"});
-            this.comboBox2.Location = new System.Drawing.Point(276, 130);
+            this.comboBox2.Location = new System.Drawing.Point(276, 241);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(66, 21);
