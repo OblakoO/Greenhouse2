@@ -5,8 +5,8 @@
 ![Use case diagram](https://raw.githubusercontent.com/OblakoO/Greenhouse2/master/Basic%20Use%20Case%20Diagram%20(1).jpeg)
 ## Activity diagram
 ### Выбор плана
-![Choise](https://raw.githubusercontent.com/OblakoO/Greenhouse2/master/Blank%20Diagram%20(2).jpeg)
+![Choise](https://github.com/OblakoO/Greenhouse2/blob/master/choose%20plan.jpeg?raw=true)
 ### Создать новый план
-![Create](https://github.com/OblakoO/Greenhouse2/blob/master/Diagram%20of%20activity%20Form%203.jpeg)
+![Create](https://raw.githubusercontent.com/OblakoO/Greenhouse2/master/Diagram%20of%20activity%20Form%203%20(1).jpeg)
 ### Показать теплицу
-![Show](https://github.com/OblakoO/Greenhouse2/blob/master/Blank%20Diagram.jpeg)
+![Show](https://github.com/OblakoO/Greenhouse2/blob/master/Show%20Greenhoese.jpeg?raw=true)
