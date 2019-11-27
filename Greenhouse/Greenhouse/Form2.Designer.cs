@@ -92,6 +92,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(8, 9);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(192, 15);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Выберите устройство:";
@@ -114,6 +115,7 @@
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.Location = new System.Drawing.Point(5, 150);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(192, 15);
             this.textBox3.TabIndex = 6;
             this.textBox3.Text = "Показатели:";
@@ -136,6 +138,7 @@
             this.textBox4.Location = new System.Drawing.Point(5, 346);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(197, 19);
             this.textBox4.TabIndex = 13;
             this.textBox4.Text = "Текущее дата и время:";
@@ -165,6 +168,7 @@
             this.textBox2.Location = new System.Drawing.Point(206, 9);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(225, 17);
             this.textBox2.TabIndex = 20;
             this.textBox2.Text = "Название плана и культуры:";

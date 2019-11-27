@@ -67,6 +67,7 @@
             this.textBox1.Location = new System.Drawing.Point(323, 9);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(151, 17);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Выберите культуру";
@@ -80,6 +81,7 @@
             this.textBox2.Location = new System.Drawing.Point(358, 89);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(145, 16);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Начальная влажность";
@@ -87,12 +89,14 @@
             // 
             // textBox3
             // 
+            this.textBox3.AcceptsReturn = true;
             this.textBox3.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.Location = new System.Drawing.Point(44, 89);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(162, 16);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Начальная температура";
@@ -136,6 +140,7 @@
             this.textBox6.Location = new System.Drawing.Point(84, 154);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(98, 16);
             this.textBox6.TabIndex = 10;
             this.textBox6.Text = "Длительность";
@@ -148,6 +153,7 @@
             this.textBox7.Location = new System.Drawing.Point(358, 154);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(98, 16);
             this.textBox7.TabIndex = 11;
             this.textBox7.Text = "Длительность";
@@ -265,6 +271,7 @@
             this.textBox5.Location = new System.Drawing.Point(621, 89);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(145, 16);
             this.textBox5.TabIndex = 22;
             this.textBox5.Text = "Освещеннось";
@@ -353,6 +360,7 @@
             this.textBox8.Location = new System.Drawing.Point(590, 122);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(17, 16);
             this.textBox8.TabIndex = 25;
             this.textBox8.Text = "С";
@@ -365,6 +373,7 @@
             this.textBox9.Location = new System.Drawing.Point(590, 185);
             this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(17, 16);
             this.textBox9.TabIndex = 26;
             this.textBox9.Text = "До";
@@ -377,6 +386,7 @@
             this.textBox10.Location = new System.Drawing.Point(710, 124);
             this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(73, 16);
             this.textBox10.TabIndex = 27;
             this.textBox10.Text = "Часов";
@@ -389,6 +399,7 @@
             this.textBox11.Location = new System.Drawing.Point(710, 188);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(73, 16);
             this.textBox11.TabIndex = 28;
             this.textBox11.Text = "Часов";
@@ -401,6 +412,7 @@
             this.textBox12.Location = new System.Drawing.Point(344, 223);
             this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(145, 16);
             this.textBox12.TabIndex = 29;
             this.textBox12.Text = "Уровень кислотности";
@@ -413,6 +425,7 @@
             this.textBox13.Location = new System.Drawing.Point(472, 255);
             this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(17, 16);
             this.textBox13.TabIndex = 31;
             this.textBox13.Text = "pH";
@@ -439,6 +452,7 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(201, 21);
             this.comboBox6.TabIndex = 33;
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             // 
             // Form3
             // 

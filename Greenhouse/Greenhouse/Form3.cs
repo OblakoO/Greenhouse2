@@ -52,7 +52,7 @@ namespace Greenhouse
                 || comboBox1.SelectedIndex == -1 
                 || comboBox2.SelectedIndex == -1
                 || comboBox3.SelectedIndex == -1
-                || listsPlan.SelectedIndex==-1)
+                || comboBox6.SelectedIndex==-1)
             {
                 MessageBox.Show("Ошибка: заполнены не все поля.");
             }
@@ -116,6 +116,11 @@ namespace Greenhouse
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
