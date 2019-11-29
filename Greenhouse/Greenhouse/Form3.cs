@@ -45,24 +45,24 @@ namespace Greenhouse
 
         private void button2_Click(object sender, EventArgs e)   //начать выращивание
         {
-            if (maskedTextBox2.Text == ""
-                || maskedTextBox1.Text == "" 
-                || maskedTextBox3.Text == ""
-                || maskedTextBox4.Text == "" 
-                || comboBox1.SelectedIndex == -1 
-                || comboBox2.SelectedIndex == -1
-                || comboBox3.SelectedIndex == -1
-                || comboBox6.SelectedIndex==-1)
-            {
-                MessageBox.Show("Ошибка: заполнены не все поля.");
-            }
-            else
-            {
-                Form2 f = new Form2();
-                this.Hide();
-                f.ShowDialog();
-                this.Close();
-            }
+            //if (maskedTextBox2.Text == ""
+            //    || maskedTextBox1.Text == "" 
+            //    || maskedTextBox3.Text == ""
+            //    || maskedTextBox4.Text == "" 
+            //    || comboBox1.SelectedIndex == -1 
+            //    || comboBox2.SelectedIndex == -1
+            //    || comboBox3.SelectedIndex == -1
+            //    || comboBox6.SelectedIndex==-1)
+            //{
+            //    MessageBox.Show("Ошибка: заполнены не все поля.");
+            //}
+            //else
+            //{
+            //    Form2 f = new Form2();
+            //    this.Hide();
+            //    f.ShowDialog();
+            //    this.Close();
+            //}
         }
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -121,6 +121,11 @@ namespace Greenhouse
         }
 
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
         {
 
         }
