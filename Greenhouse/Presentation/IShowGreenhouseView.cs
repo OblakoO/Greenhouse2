@@ -10,6 +10,6 @@ namespace Presentation
         event Action AddDevice;
         event Action DeleteDevice;
         event Action ChoiseDevice;
-        event Action ChangePlan;
+        event Action BackToMainWindow;
     }
 }

@@ -38,6 +38,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
     </Reference>
@@ -51,7 +54,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Controller.cs" />
+    <Compile Include="Entity\Culturel.cs" />
     <Compile Include="Entity\Device.cs" />
+    <Compile Include="Entity\EntityBase.cs" />
+    <Compile Include="Entity\Plan.cs" />
     <Compile Include="Entity\Sensor.cs" />
     <Compile Include="ICreateNewPlanService.cs" />
     <Compile Include="IGreenhouseService.cs" />

@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Model;
+using Model.Service;
 using Presentation;
 
 namespace Greenhouse
@@ -13,15 +15,18 @@ namespace Greenhouse
     public partial class ShowGreenhouseView : Form, IShowGreenhouseView
     {
         private readonly Application _context;
-        public ShowGreenhouseView(ApplicationContext context)
+        private readonly ICreateNewPlanService _planSerivce;
+        public ShowGreenhouseView(ApplicationContext context, ICreateNewPlanService _planSerivce)
         {
+            _planSerivce = _planSerivce;
             InitializeComponent();
+       
         }
 
         public event Action AddDevice;
         public event Action DeleteDevice;
         public event Action ChoiseDevice;
-        public event Action ChangePlan;
+        public event Action BackToMainWindow;
 
 
         private void textBox1_TextChanged(object sender, EventArgs e)  //текст выберите устройство
@@ -101,9 +106,14 @@ namespace Greenhouse
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ChangePlan?.Invoke();
+            BackToMainWindow?.Invoke();
             //Form3 newForm = new Form3();
             //newForm.ShowDialog();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)    //окошко название плана
+        {
+            textBox1.Text = _planSerivce.GetAllPlan().FirstOrDefault();
         }
     }
 }

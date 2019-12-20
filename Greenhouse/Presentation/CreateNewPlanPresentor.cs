@@ -11,29 +11,17 @@ namespace Presentation
     {
         private readonly IKernel _kernel;
         private ICreateNewPlanView _view;
+        private ICreateNewPlanService _service;
 
-
-        //сервис
-
-        public CreateNewPlanPresentor(IKernel kernel, ICreateNewPlanView view /*ещё один сервис*/)
+        public CreateNewPlanPresentor(IKernel kernel, ICreateNewPlanView view, ICreateNewPlanService service)
         {
             _kernel = kernel;
             _view = view;
-            _view.SavePlan += SavePlan;
-            _view.ChoiseTheCulture += ChoiseTheCulture;
             _view.StartCycle += StartCycle;
             _view.BackToMainWindow += BackToMainWindow;
-            //ещё хрень
 
-        }
-
-        private void SavePlan()
-        {
-
-        }
-
-        private void ChoiseTheCulture()
-        {
+            _service = service;
+            //для сервиса нужно действие
 
         }
 
@@ -41,6 +29,14 @@ namespace Presentation
         {
             //var presenter = _kernel.Get<ShowGreenhousePresentor>();
             //presenter.Run();
+            if (_view.Cultur==null || _view.NamePlan==null )
+            {
+                _service.CreateNewPlan(_view.Cultur, _view.NamePlan);
+            }
+            else
+            {
+                _view.ShowError("Invalid 'Initiative' value");
+            }
             _kernel.Get<ShowGreenhousePresentor>().Run();
             _view.Close();
         }

@@ -5,9 +5,18 @@ using System.Text;
 
 namespace Model
 {
-    interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
-        IEnumerable<T> GetAll();
+        int Add(T obj);
+        void Update(T obj);
+        void Remove(int id);
+        void Save();
         T Find(int id);
+        IEnumerable<T> GetAll();
+
+
+
+        //IEnumerable<T> GetAll();
+        //T Find(int id);
     }
 }

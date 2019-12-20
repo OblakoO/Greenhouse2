@@ -21,7 +21,7 @@ namespace Presentation
             _view.AddDevice += AddDevice;
             _view.DeleteDevice += DeleteDevice;
             _view.ChoiseDevice += ChoiceDevice;
-            _view.ChangePlan += ChangePlan;
+            _view.BackToMainWindow += BackToMainWindow;
         }
         private void AddDevice()
         {
@@ -38,9 +38,9 @@ namespace Presentation
 
         }
 
-        private void ChangePlan()
+        private void BackToMainWindow()
         {
-            _kernel.Get<CreateNewPlanPresentor>().Run();
+            _kernel.Get<MainWindowPresentor>().Run();
             _view.Close();
         }
 

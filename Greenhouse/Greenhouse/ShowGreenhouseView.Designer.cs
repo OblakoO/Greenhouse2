@@ -101,7 +101,9 @@
             // 
             // panel1
             // 
+            this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Location = new System.Drawing.Point(203, 34);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(577, 354);
@@ -136,7 +138,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.Location = new System.Drawing.Point(5, 346);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(197, 19);
@@ -155,10 +157,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.Window;
-            this.panel4.Location = new System.Drawing.Point(436, 7);
+            this.panel4.Location = new System.Drawing.Point(346, 7);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(202, 22);
+            this.panel4.Size = new System.Drawing.Size(292, 22);
             this.panel4.TabIndex = 19;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // textBox2
             // 
@@ -166,12 +169,12 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.Location = new System.Drawing.Point(206, 9);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(225, 17);
+            this.textBox2.Size = new System.Drawing.Size(135, 17);
             this.textBox2.TabIndex = 20;
-            this.textBox2.Text = "Название плана и культуры:";
+            this.textBox2.Text = "Название плана:";
             // 
             // button4
             // 
@@ -180,11 +183,11 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(136, 24);
             this.button4.TabIndex = 2;
-            this.button4.Text = "Изменить план";
+            this.button4.Text = "Выход в меню";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Form2
+            // ShowGreenhouseView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -203,7 +206,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "ShowGreenhouseView";
             this.Text = "Отображение теплицы";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

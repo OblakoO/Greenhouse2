@@ -29,8 +29,9 @@ namespace Greenhouse
             kernel.Bind<IShowGreenhouseView>().To<ShowGreenhouseView>();
             kernel.Bind<IGreenhouseService>().To<GreenhouseService>();
             kernel.Bind<ICreateNewPlanService>().To<CreateNewPlanService>();
-            //kernel.Bind<IRepository<Character>>().To<CharacterRepository>();
-            //kernel.Bind<IRepository<InitiativeEntry>>().To<InitiativeEntryRepository>();
+
+            kernel.Bind<IRepository<Plan>>().To<PlanRepository>();
+        
 
 
             Application.EnableVisualStyles();
