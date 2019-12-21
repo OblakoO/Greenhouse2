@@ -37,17 +37,6 @@ namespace Greenhouse
         public string Light => dataGridView1.Text;
         public string Acidity => dataGridView1.Text;
 
-       // int ICreateNewPlanView.Stage => throw new NotImplementedException();
-
-        //int ICreateNewPlanView.Hours => throw new NotImplementedException();
-
-        //int ICreateNewPlanView.Temperature => throw new NotImplementedException();
-
-        //int ICreateNewPlanView.Humidity => throw new NotImplementedException();
-
-        //int ICreateNewPlanView.Light => throw new NotImplementedException();
-
-       // int ICreateNewPlanView.Acidity => throw new NotImplementedException();
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -67,13 +56,13 @@ namespace Greenhouse
         private void button2_Click(object sender, EventArgs e)   //начать выращивание
         {
             
-            int count = 0;
-            for (int i = 0; i < 11; i++)
-                for (int j = 0; j < 6; j++)
-                    if (dataGridView1.Rows[i].Cells[j].Value == null)
-                        count++;
+            //int count = 0;
+            //for (int i = 0; i < 11; i++)
+            //    for (int j = 0; j < 6; j++)
+            //        if (dataGridView1.Rows[i].Cells[j].Value == null)
+            //            count++;
            
-            if (textBox4.Text != "" && textBox3.Text != ""&&count==0)
+            if (textBox4.Text != "" && textBox3.Text != "")
             {
 
                 StartCycle?.Invoke();  

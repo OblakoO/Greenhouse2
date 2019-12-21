@@ -74,7 +74,6 @@
             this.button2.Text = "Начать выращивание";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-         //   this.button2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
             // 
             // button4
             // 
@@ -90,8 +89,6 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -158,36 +155,7 @@
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.Width = 124;
-            // dataGridView1.AllowUserToAddRows = false; //запрешаем пользователю самому добавлять строки
-
-            //for (int i = 0; i < 6; ++i)
-            //{
-            //    //Добавляем строку, указывая значения колонок поочереди слева направо
-            //    dataGridView1.Rows.Add("Пример 1, Товар " + i, i * 1000, i);
-            //}
-
-            for (int i = 0; i < 11; ++i)
-            {
-                //Добавляем строку, указывая значения каждой ячейки по имени (можно использовать индекс 0, 1, 2 вместо имен)
-                dataGridView1.Rows.Add();
-                dataGridView1[0, dataGridView1.Rows.Count - 1].Value = i + 1;
-                dataGridView1[1, dataGridView1.Rows.Count - 1].Value = 0;
-                dataGridView1[2, dataGridView1.Rows.Count - 1].Value = 0;
-                dataGridView1[3, dataGridView1.Rows.Count - 1].Value = 0;
-                dataGridView1[4, dataGridView1.Rows.Count - 1].Value = 0;
-                dataGridView1[5, dataGridView1.Rows.Count - 1].Value = 0;
-            }
-
-            //А теперь простой пройдемся циклом по всем ячейкам
-            for (int i = 0; i < dataGridView1.Rows.Count; ++i)
-            {
-                for (int j = 0; j < dataGridView1.Columns.Count; ++j)
-                {
-                    //Значения ячеек хряняться в типе object
-                    //это позволяет хранить любые данные в таблице
-                    object o = dataGridView1[j, i].Value;
-                }
-            }
+            // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.BlanchedAlmond;
