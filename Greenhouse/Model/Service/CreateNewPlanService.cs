@@ -11,10 +11,16 @@ namespace Model.Service
 {
     public class CreateNewPlanService : ICreateNewPlanService
     {
-        private string _planName;
-        public string CreateNewPlan
+        private readonly IRepository<Plan> _repository;
+        public CreateNewPlanService(IRepository<Plan> repository)
         {
-            get => _planName; set { if (value.Length > 0) _planName = value; }
+            _repository = repository;
+        }
+
+        public void CreatePlan(string name)
+        {
+            Plan plan = new Plan { Name = name };
+            _repository.Add(plan);
         }
     }
 }

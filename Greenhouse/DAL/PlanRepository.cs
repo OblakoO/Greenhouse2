@@ -7,8 +7,8 @@ namespace DAL
 {
     public class PlanRepository : IRepository<Plan>
     {
-        List<Plan> _data = new List<Plan>();
-        private int _end_index = 0;
+        static List<Plan> _data = new List<Plan>();
+        static private int _end_index = 0;
 
         public int Add(Plan obj)
         {
@@ -35,6 +35,11 @@ namespace DAL
         public void Update(Plan obj)
         {
             throw new NotImplementedException();
+        }
+
+        IEnumerable<Plan> IRepository<Plan>.GetAll()
+        {
+            return _data.ToArray(); // create copy
         }
     }
 }

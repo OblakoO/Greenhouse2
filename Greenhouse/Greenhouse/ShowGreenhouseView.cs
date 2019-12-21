@@ -79,12 +79,11 @@ namespace Greenhouse
             //Form3 newForm = new Form3();
             //newForm.ShowDialog();
         }
-        //public string PlanName { get => textBox5.Text; set => throw new NotImplementedException(); }
-
+        public string PlanName { get => textBox5.Text; set => textBox5.Text = value; }
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-
-         //  textBox5.Text = _planSerivce.CreateNewPlan().FirstOrDefault();
+            textBox5.ReadOnly = true;
+            //  textBox5.Text = _planSerivce.CreateNewPlan().FirstOrDefault();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

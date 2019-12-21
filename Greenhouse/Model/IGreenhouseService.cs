@@ -8,5 +8,6 @@ namespace Model
 {
     public interface IGreenhouseService
     {
+        string GetPlanName();
     }
 }

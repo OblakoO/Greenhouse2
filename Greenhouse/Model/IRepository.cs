@@ -12,7 +12,7 @@ namespace Model
         void Remove(int id);
        
         T Find(int id);
-        //IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll();
 
     }
 }

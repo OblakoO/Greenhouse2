@@ -9,7 +9,6 @@ namespace Model
     public interface ICreateNewPlanService
     {
         //event Action PlanUpdated;
-
-        string CreateNewPlan { get; set; }
+        void CreatePlan(string name);
     }
 }

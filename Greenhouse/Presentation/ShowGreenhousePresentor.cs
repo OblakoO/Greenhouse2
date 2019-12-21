@@ -10,10 +10,11 @@ namespace Presentation
     public class ShowGreenhousePresentor : IPresentor
     {
         private readonly IKernel _kernel;
-        private IShowGreenhouseView _view;
-        
+        private readonly IShowGreenhouseView _view;
+        private readonly IGreenhouseService _service;
 
-        public ShowGreenhousePresentor(IKernel kernel, IShowGreenhouseView view)
+
+        public ShowGreenhousePresentor(IKernel kernel, IShowGreenhouseView view, IGreenhouseService service)
         {
             _kernel = kernel;
        
@@ -22,6 +23,8 @@ namespace Presentation
             _view.DeleteDevice += DeleteDevice;
             _view.ChoiseDevice += ChoiceDevice;
             _view.BackToMainWindow += BackToMainWindow;
+
+            _service = service;
         }
         private void AddDevice()
         {
@@ -49,8 +52,14 @@ namespace Presentation
 
         }
 
+        private void UpdateView()
+        {
+            _view.PlanName = _service.GetPlanName();
+        }
+
         public void Run()
         {
+            UpdateView();
             _view.Show();
         }
     }

@@ -11,5 +11,7 @@ namespace Presentation
         event Action DeleteDevice;
         event Action ChoiseDevice;
         event Action BackToMainWindow;
+
+        string PlanName { get; set; }
     }
 }
