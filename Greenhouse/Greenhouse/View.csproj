@@ -118,5 +118,20 @@
       <Name>Presentation</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-temperature-icon-png-image_450261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\датчик влажности.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\датчик кислотности.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\свет.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\датчик температуры1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

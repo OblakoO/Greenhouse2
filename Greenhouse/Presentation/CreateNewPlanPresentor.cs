@@ -13,14 +13,14 @@ namespace Presentation
         private ICreateNewPlanView _view;
         private ICreateNewPlanService _service;
 
-        public CreateNewPlanPresentor(IKernel kernel, ICreateNewPlanView view, ICreateNewPlanService service)
+        public CreateNewPlanPresentor(IKernel kernel, ICreateNewPlanView view/*, ICreateNewPlanService service*/)
         {
             _kernel = kernel;
             _view = view;
             _view.StartCycle += StartCycle;
             _view.BackToMainWindow += BackToMainWindow;
 
-            _service = service;
+           // _service = service;
             //для сервиса нужно действие
 
         }
@@ -29,14 +29,14 @@ namespace Presentation
         {
             //var presenter = _kernel.Get<ShowGreenhousePresentor>();
             //presenter.Run();
-            if (_view.Cultur==null || _view.NamePlan==null )
-            {
-                _service.CreateNewPlan(_view.Cultur, _view.NamePlan);
-            }
-            else
-            {
-                _view.ShowError("Invalid 'Initiative' value");
-            }
+            //if (_view.Cultur==null || _view.NamePlan==null )
+            //{
+            //    _service.CreateNewPlan(_view.Cultur, _view.NamePlan);
+            //}
+            //else
+            //{
+            //    _view.ShowError("Invalid 'Initiative' value");
+            //}
             _kernel.Get<ShowGreenhousePresentor>().Run();
             _view.Close();
         }

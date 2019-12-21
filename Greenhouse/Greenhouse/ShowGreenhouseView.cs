@@ -16,11 +16,12 @@ namespace Greenhouse
     {
         private readonly Application _context;
         private readonly ICreateNewPlanService _planSerivce;
-        public ShowGreenhouseView(ApplicationContext context, ICreateNewPlanService _planSerivce)
+        public ShowGreenhouseView(ApplicationContext context/*, ICreateNewPlanService _planSerivce*/)
         {
-            _planSerivce = _planSerivce;
+           //_planSerivce = _planSerivce;
             InitializeComponent();
-       
+          
+
         }
 
         public event Action AddDevice;
@@ -34,21 +35,6 @@ namespace Greenhouse
 
         }
 
-        private void button1_Click(object sender, EventArgs e) //кнопка добавить устройство
-        {
-
-            AddDevice?.Invoke();
-            //if (comboBox1.SelectedIndex == -1 || comboBox1.SelectedIndex == 8)
-            //{
-            //    MessageBox.Show("Ошибка: устройство не выбрано.");
-            //}
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)  //выпадающий список
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)//панель теплицы
         {
 
@@ -57,11 +43,6 @@ namespace Greenhouse
         private void textBox2_TextChanged(object sender, EventArgs e) //текст отображение теплицы
         {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)  //кнопка удалить устройство
-        {
-            DeleteDevice?.Invoke();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -111,9 +92,50 @@ namespace Greenhouse
             //newForm.ShowDialog();
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)    //окошко название плана
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Text = _planSerivce.GetAllPlan().FirstOrDefault();
+            textBox5.Text = _planSerivce.GetAllPlan().FirstOrDefault();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)     //освещение
+        {
+           
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)    //обогреватель
+        {
+
+        }
+
+        private void button3_Click_2(object sender, EventArgs e)      //кондиционер
+        {
+
+        }
+
+        private void button5_Click_2(object sender, EventArgs e)     //увлажнитель
+        {
+
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)   //дозатор удобрений
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

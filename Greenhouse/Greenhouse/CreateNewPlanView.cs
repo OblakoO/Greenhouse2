@@ -16,12 +16,13 @@ namespace Greenhouse
         private readonly Application _context;
         private readonly CreateNewPlanService _planSerivce;
 
-        public Form3(ApplicationContext context,CreateNewPlanService planSerivce )
+        public Form3(ApplicationContext context/*,CreateNewPlanService planSerivce */)
         {
             InitializeComponent();
-            _planSerivce = planSerivce;
+           // _planSerivce = planSerivce;
+            
         }
-        
+   
         public event Action StartCycle;
         public event Action BackToMainWindow;
 
@@ -53,7 +54,7 @@ namespace Greenhouse
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -63,7 +64,24 @@ namespace Greenhouse
 
         private void button2_Click(object sender, EventArgs e)   //начать выращивание
         {
-            StartCycle?.Invoke();
+            
+            int count = 0;
+            for (int i = 0; i < 11; i++)
+                for (int j = 0; j < 6; j++)
+                    if (dataGridView1.Rows[i].Cells[j].Value == null)
+                        count++;
+
+            if (textBox4.Text != "" && textBox3.Text != ""&&count==0)
+            {
+                StartCycle?.Invoke();  
+            }
+            else
+            {
+                MessageBox.Show("Не заполнены поля.");
+            }
+
+
+            // MessageBox.Show("Не заполнены поля в таблице.");
         }
 
         public void ShowError(string message)
@@ -96,7 +114,7 @@ namespace Greenhouse
 
         private void textBox3_TextChanged_1(object sender, EventArgs e)   //окошко название плана
         {
-
+            //MyClass.strTextChangeN = textBox3.Text;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)    //табличка
@@ -107,9 +125,9 @@ namespace Greenhouse
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
-            var cultureNameBox = (TextBox)sender;
+            //var cultureNameBox = (TextBox)sender;
            
-            _planSerivce.CreateNewPlan(cultureNameBox.Text, null);
+           // _planSerivce.CreateNewPlan(cultureNameBox.Text, null);
         }
     }
 }

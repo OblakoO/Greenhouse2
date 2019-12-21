@@ -35,15 +35,15 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.lbl_Error = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -89,10 +89,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -107,10 +110,88 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.Size = new System.Drawing.Size(748, 289);
             this.dataGridView1.TabIndex = 34;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Стадия";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column1.Width = 124;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Часов";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 124;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Температура";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 124;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Влажность";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Освещенность";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 124;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Кислотность";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 124;
+            // 
+
+
+            dataGridView1.AllowUserToAddRows = false; //запрешаем пользователю самому добавлять строки
+
+            //for (int i = 0; i < 6; ++i)
+            //{
+            //    //Добавляем строку, указывая значения колонок поочереди слева направо
+            //    dataGridView1.Rows.Add("Пример 1, Товар " + i, i * 1000, i);
+            //}
+
+            for (int i = 0; i < 11; ++i)
+            {
+                //Добавляем строку, указывая значения каждой ячейки по имени (можно использовать индекс 0, 1, 2 вместо имен)
+                dataGridView1.Rows.Add();
+                dataGridView1[0, dataGridView1.Rows.Count - 1].Value = i + 1;
+                dataGridView1[1, dataGridView1.Rows.Count - 1].Value = 0;
+                dataGridView1[2, dataGridView1.Rows.Count - 1].Value = 0;
+                dataGridView1[3, dataGridView1.Rows.Count - 1].Value = 0;
+                dataGridView1[4, dataGridView1.Rows.Count - 1].Value = 0;
+                dataGridView1[5, dataGridView1.Rows.Count - 1].Value = 0;
+            }
+
+            //А теперь простой пройдемся циклом по всем ячейкам
+            for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+            {
+                for (int j = 0; j < dataGridView1.Columns.Count; ++j)
+                {
+                    //Значения ячеек хряняться в типе object
+                    //это позволяет хранить любые данные в таблице
+                    object o = dataGridView1[j, i].Value;
+                }
+            }
+
+
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.BlanchedAlmond;
@@ -143,43 +224,6 @@
             this.textBox4.Size = new System.Drawing.Size(206, 20);
             this.textBox4.TabIndex = 37;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Стадия";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Часов";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Температура";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Влажность";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Освещенность";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Кислотность";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
             // 
             // lbl_Error
             // 

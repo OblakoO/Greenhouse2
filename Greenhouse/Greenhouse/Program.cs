@@ -19,6 +19,7 @@ namespace Greenhouse
         /// Главная точка входа для приложения.
         /// </summary>
         [STAThread]
+        
         static void Main()
         {
             Ninject.StandardKernel kernel = new StandardKernel();
@@ -42,5 +43,9 @@ namespace Greenhouse
 
             
         }
+    }
+    class MyClass
+    {
+        public static string strTextChangeN { get; set; }
     }
 }
