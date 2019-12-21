@@ -15,19 +15,21 @@ namespace Greenhouse
     {
         private readonly Application _context;
         private readonly CreateNewPlanService _planSerivce;
-
-        public Form3(ApplicationContext context/*,CreateNewPlanService planSerivce */)
+  
+        public Form3(ApplicationContext context,CreateNewPlanService planSerivce)
         {
             InitializeComponent();
-           // _planSerivce = planSerivce;
+           _planSerivce = planSerivce;
             
         }
-   
+        public string PlanName { get => textBox3.Text; set => PlanName = value; }
+        
+
         public event Action StartCycle;
         public event Action BackToMainWindow;
 
         public string Cultur => textBox4.Text;
-        public string NamePlan => textBox3.Text;
+  
         public string Stage => dataGridView1.Text;
         public string Hours => dataGridView1.Text;
         public string Temperature => dataGridView1.Text;
@@ -70,18 +72,16 @@ namespace Greenhouse
                 for (int j = 0; j < 6; j++)
                     if (dataGridView1.Rows[i].Cells[j].Value == null)
                         count++;
-
+           
             if (textBox4.Text != "" && textBox3.Text != ""&&count==0)
             {
+
                 StartCycle?.Invoke();  
             }
             else
             {
                 MessageBox.Show("Не заполнены поля.");
             }
-
-
-            // MessageBox.Show("Не заполнены поля в таблице.");
         }
 
         public void ShowError(string message)
@@ -125,9 +125,25 @@ namespace Greenhouse
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
-            //var cultureNameBox = (TextBox)sender;
+           // var cultureNameBox = (TextBox)sender;
            
-           // _planSerivce.CreateNewPlan(cultureNameBox.Text, null);
+            //_planSerivce.CreateNewPlan(cultureNameBox.Text, null);
         }
+        
+        private void textBox3_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+               // f.textBox5.Text = this.textBox3.Text;
+            }
+        }
+
+        //private void button2_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Tab)
+        //    {
+        //        f.textBox5.Text = this.textBox3.Text;
+        //    }
+        //}
     }
 }

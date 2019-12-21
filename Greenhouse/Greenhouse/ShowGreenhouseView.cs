@@ -16,12 +16,10 @@ namespace Greenhouse
     {
         private readonly Application _context;
         private readonly ICreateNewPlanService _planSerivce;
-        public ShowGreenhouseView(ApplicationContext context/*, ICreateNewPlanService _planSerivce*/)
+        public ShowGreenhouseView(ApplicationContext context, ICreateNewPlanService _planSerivce)
         {
-           //_planSerivce = _planSerivce;
+           _planSerivce = _planSerivce;
             InitializeComponent();
-          
-
         }
 
         public event Action AddDevice;
@@ -60,16 +58,6 @@ namespace Greenhouse
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
 
@@ -91,11 +79,12 @@ namespace Greenhouse
             //Form3 newForm = new Form3();
             //newForm.ShowDialog();
         }
-
+        //public string PlanName { get => textBox5.Text; set => throw new NotImplementedException(); }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            textBox5.Text = _planSerivce.GetAllPlan().FirstOrDefault();
+
+         //  textBox5.Text = _planSerivce.CreateNewPlan().FirstOrDefault();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -133,9 +122,5 @@ namespace Greenhouse
 
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -74,6 +74,7 @@
             this.button2.Text = "Начать выращивание";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+         //   this.button2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.button2_KeyUp);
             // 
             // button4
             // 
@@ -157,10 +158,7 @@
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
             this.Column6.Width = 124;
-            // 
-
-
-            dataGridView1.AllowUserToAddRows = false; //запрешаем пользователю самому добавлять строки
+            // dataGridView1.AllowUserToAddRows = false; //запрешаем пользователю самому добавлять строки
 
             //for (int i = 0; i < 6; ++i)
             //{
@@ -190,8 +188,6 @@
                     object o = dataGridView1[j, i].Value;
                 }
             }
-
-
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.BlanchedAlmond;
@@ -215,6 +211,7 @@
             this.textBox3.Size = new System.Drawing.Size(239, 20);
             this.textBox3.TabIndex = 36;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
+            this.textBox3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyUp);
             // 
             // textBox4
             // 

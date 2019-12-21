@@ -53,12 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity\Controller.cs" />
+    <Compile Include="Entity\IDevice.cs" />
     <Compile Include="Entity\Culturel.cs" />
     <Compile Include="Entity\Device.cs" />
+    <Compile Include="Entity\Elements.cs" />
     <Compile Include="Entity\EntityBase.cs" />
     <Compile Include="Entity\Plan.cs" />
     <Compile Include="Entity\Sensor.cs" />
+    <Compile Include="Entity\Time.cs" />
     <Compile Include="ICreateNewPlanService.cs" />
     <Compile Include="IGreenhouseService.cs" />
     <Compile Include="IRepository.cs" />

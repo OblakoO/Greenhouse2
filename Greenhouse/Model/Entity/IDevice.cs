@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Model.Entity
 {
-    public class Controller
+    public interface IDevice
     {
+        Location Location { get; set; }
     }
 }

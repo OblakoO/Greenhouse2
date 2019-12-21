@@ -8,10 +8,8 @@ namespace Model
 {
     public interface ICreateNewPlanService
     {
-        event Action PlanUpdated;
+        //event Action PlanUpdated;
 
-        IEnumerable<string> GetAllPlan();
-        void CreateNewPlan(string cultur, string namePlan/*, int Stage, int Hours, int Temperature,
-                           int Humidity, int Light, int Acidity*/);
+        string CreateNewPlan { get; set; }
     }
 }

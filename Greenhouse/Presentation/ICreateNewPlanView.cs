@@ -8,7 +8,7 @@ namespace Presentation
     public interface ICreateNewPlanView : IView
     {
         string Cultur { get; }
-        string NamePlan { get;  }
+        string PlanName { get; set; }
        // int Stage { get;  }
         //int Hours { get; }
         //int Temperature { get;  }

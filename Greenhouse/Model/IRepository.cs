@@ -10,13 +10,9 @@ namespace Model
         int Add(T obj);
         void Update(T obj);
         void Remove(int id);
-        void Save();
+       
         T Find(int id);
-        IEnumerable<T> GetAll();
-
-
-
         //IEnumerable<T> GetAll();
-        //T Find(int id);
+
     }
 }
