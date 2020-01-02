@@ -41,13 +41,13 @@
             this.createNewPlan.Name = "createNewPlan";
             this.createNewPlan.Size = new System.Drawing.Size(182, 182);
             this.createNewPlan.TabIndex = 0;
-            this.createNewPlan.Text = "Создать новый план";
+            this.createNewPlan.Text = "Мы в дерьме";
             this.createNewPlan.UseVisualStyleBackColor = true;
             this.createNewPlan.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainWindowView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(356, 356);
